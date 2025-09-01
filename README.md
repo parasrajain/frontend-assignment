@@ -1,134 +1,114 @@
-🚀 React Assignment – InputField & DataTable Components
+# Frontend Assignment – React + Storybook
 
-This project demonstrates reusable, responsive UI components built with React, TypeScript, TailwindCSS, and Framer Motion, along with Storybook for component documentation and testing.
+This project is a frontend assignment built using **React**, **TypeScript**, **Tailwind CSS**, and **Storybook**.  
+It demonstrates reusable UI components (`InputField`, `DataTable`, etc.) with responsive design, animations, and interactive states.
 
-It includes:
+---
 
-✨ InputField – styled, accessible input with validation, helper/error messages, clear button, and password toggle
+## ✨ Features
+- ⚛️ **React + TypeScript** for type-safe UI components
+- 🎨 **Tailwind CSS** for modern, responsive styling
+- 📝 **Storybook** for interactive component previews
+- 🌗 Dark mode ready
+- 📦 Reusable UI components:
+  - **InputField** (with label, validation, error states, password toggle, clear button)
+  - **DataTable** (sortable columns, row selection, hover states, animations)
+- ⚡ Smooth transitions with **Framer Motion**
+- ✅ Accessible & responsive design
 
-📊 DataTable – sortable, selectable, responsive table with animations
+---
 
-🎨 Modern UI, responsive layout, and dark mode support
+## 📂 Folder Structure
+frontend-assignment/
+│
+├── .storybook/ # Storybook config
+│ ├── main.ts # Storybook settings & addons
+│ └── preview.ts # Global decorators/themes
+│
+├── src/
+│ ├── components/
+│ │ ├── InputField.tsx
+│ │ ├── DataTable.tsx
+│ │ └── ...
+│ ├── stories/
+│ │ ├── InputField.stories.tsx
+│ │ ├── DataTable.stories.tsx
+│ │ └── ...
+│ ├── App.tsx # Demo usage
+│ ├── index.tsx
+│ └── ...
+│
+├── package.json
+└── README.md
 
-📚 Storybook setup for interactive component demos
 
-📂 Project Structure
-src/
- ├── components/
- │   ├── InputField/
- │   │   ├── InputField.tsx
- │   │   └── InputField.stories.tsx
- │   ├── DataTable/
- │   │   ├── DataTable.tsx
- │   │   └── DataTable.stories.tsx
- ├── App.tsx
- └── index.tsx
 
-⚡ Getting Started
-1. Clone the repo
-git clone https://github.com/your-username/react-assignment.git
-cd react-assignment
+## ⚙️ Setup Instructions
 
-2. Install dependencies
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/parasrajain/frontend-assignment
+cd frontend-assignment
+
+2️⃣ Install Dependencies
 npm install
 
-3. Start the app
+3️⃣ Run the App
 npm start
+Runs the React app at http://localhost:3000.
 
-
-The app will be available at http://localhost:3000
-
-4. Run Storybook
+4️⃣ Run Storybook
 npm run storybook
+Opens Storybook at http://localhost:6006.
+
+📘 Storybook Deployment (Chromatic)
+We use Chromatic to publish Storybook online.
+
+npm run chromatic
+Live https://www.chromatic.com/build?appId=68b5c1fd7568949629911ce6&number=2
+👉 View Deployed Storybook
+
+📄 Submission Guidelines
+As per assignment requirements:
+
+GitHub Repository https://github.com/parasrajain/frontend-assignment
+
+Clear folder structure
+
+This README file with setup instructions and explanation
+
+Storybook Preview Link https://www.chromatic.com/build?appId=68b5c1fd7568949629911ce6&number=2
+
+Published via Chromatic
 
 
-Storybook will be available at http://localhost:6006
+🛠️ Approach
+Designed modular, reusable components instead of hardcoded UI.
 
-🧩 Components
-🔹 InputField
+Used Storybook for isolated development and visual testing.
 
-Variants: outlined, filled, ghost
+Added animations and transitions using Framer Motion for smooth interactions.
 
-Sizes: sm, md, lg
+Ensured responsive design with Tailwind grid/flex utilities.
 
-Features:
+Used TypeScript for type-safety and better developer experience.
 
-Label, placeholder, helper text
 
-Error state with message
+🚀 Tech Stack
+React 18 + TypeScript
 
-Password toggle (Show/Hide)
+Tailwind CSS
 
-Clear button ✕
+Storybook
 
-Disabled & invalid states
+Framer Motion
 
-Smooth animations
+Chromatic (for Storybook deployment)
 
-🔹 DataTable
+👨‍💻 Author
+Paras Rajain
+📍 IIIT Bhagalpur
+💼 SDE Intern aspirant | React, TypeScript, Full-Stack Dev
+🔗 Portfolio | GitHub | LinkedIn
 
-Props:
 
-data → array of objects
-
-columns → array of { key, title, dataIndex, sortable }
-
-selectable → enable row selection
-
-onRowSelect → callback with selected rows
-
-Features:
-
-Sortable columns
-
-Row selection (checkboxes)
-
-Empty & loading states
-
-Animated row transitions
-
-Responsive (scrolls horizontally on small screens)
-
-🎨 UI & Styling
-
-Built with TailwindCSS for responsive design
-
-Framer Motion for animations (fade, slide, hover effects)
-
-Dark mode support with subtle transitions
-
-Modern rounded card-style design
-
-📸 Screenshots
-InputField	DataTable
-
-	
-🔧 Scripts
-Command	Description
-npm start	Runs the app in development mode
-npm run build	Builds the app for production
-npm run storybook	Starts Storybook for component previews
-npm run build-storybook	Exports static Storybook build
-📌 Tech Stack
-
-⚛️ React + TypeScript
-
-🎨 TailwindCSS (styling)
-
-🎬 Framer Motion (animations)
-
-📚 Storybook (component docs/testing)
-
-🛠️ React Scripts / CRA
-
-🙌 Author
-
-Your Name
-📧 your.email@example.com
-
-🔗 Portfolio
- | GitHub
-
-👉 This README is ready to go — you just need to update the GitHub repo link, screenshots, and your name/email.
-
-Do you want me to also add usage examples (code snippets showing how to use InputField and DataTable inside App.tsx)?
